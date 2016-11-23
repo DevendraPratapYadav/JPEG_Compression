@@ -4,6 +4,8 @@ xmlns:w="urn:schemas-microsoft-com:office:word"
 xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
 xmlns="http://www.w3.org/TR/REC-html40">
 
+	<title> JPEG Image Compression</title>
+	
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=ProgId content=Word.Document>
@@ -55,7 +57,7 @@ w\:* {behavior:url(#default#VML);}
   </m:mathPr></w:WordDocument>
 </xml><![endif]--><!--[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
-  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+/  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="371">
   <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
   <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
@@ -947,8 +949,8 @@ lang=EN-IN style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>&nb
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>I
 have used the standard JPEG algorithm for compression using DCT, quantization,
-Run-length and Huffman encoding and written the output to binary ‘.<span
-class=SpellE>dat</span>’ file.</span></p>
+Run-length and Huffman encoding and written the output to binary Â‘.<span
+class=SpellE>dat</span>Â’ file.</span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>&nbsp;</span></p>
@@ -967,7 +969,7 @@ each channel, we do the following:</span></p>
 style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>1.</span></b><b><span
 lang=EN-IN style='font-size:7.0pt;line-height:106%;font-family:"Times New Roman","serif";
 mso-ansi-language:EN-IN'>&nbsp;&nbsp;&nbsp; </span></b><b><span lang=EN-IN
-style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>Use 8×8
+style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>Use 8Ã—8
 blocks of the input image.</span></b></p>
 
 <p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
@@ -1437,7 +1439,7 @@ mso-ansi-language:EN-IN'>&nbsp;<span class=GramE>The</span> top left pixel of
 8x8 block for each block are separately stored. The difference of DC
 coefficients is stored. We use DPCM to divide the numbers into 11 categories
 and encode them using Huffman Encoding.<br>
-Any number ‘n’ is represented as 2<sup>(k-1) </sup>+ t. Where <span
+Any number Â‘nÂ’ is represented as 2<sup>(k-1) </sup>+ t. Where <span
 class=SpellE>t</span> is the residual represented using k-1 bits. Here, k is
 the category of the DC coefficient.<br>
 It is encoded in the form H S M:</span></p>
@@ -1463,12 +1465,12 @@ AC coefficients<br>
 line-height:106%;mso-ansi-language:EN-IN'>There</span></span><span lang=EN-IN
 style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'> are 63 AC
 coefficients in each 8x8 block. They are traversed in zigzag order and
-converted to linear array. Then we remove the consecutive run of 0’s by using
-Run-Length encoding. For any number ‘n’, this gives us pair of terms (r, k)
+converted to linear array. Then we remove the consecutive run of 0Â’s by using
+Run-Length encoding. For any number Â‘nÂ’, this gives us pair of terms (r, k)
 where r is the number of zeros preceding current number and k is the category
 of number. This tuple is encoded using Standard Huffman codes provided by JPEG
 standard.&nbsp;&nbsp; <br>
-Any number ‘n’ is represented as 2<sup>(k-1) </sup>+ t<br>
+Any number Â‘nÂ’ is represented as 2<sup>(k-1) </sup>+ t<br>
 It is encoded in the form H S M:</span></p>
 
 <p class=MsoListParagraph style='margin-top:0in;margin-right:0in;margin-bottom:
@@ -1515,8 +1517,8 @@ mso-ansi-language:EN-IN'>RESULTS:</span></p>
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>Using
 the menu of our program, we first compress the image and store three compressed
-.<span class=SpellE>dat</span> files corresponding to each channel of image –
-“img1.dat”, “img2.dat”, “img3.dat”</span></p>
+.<span class=SpellE>dat</span> files corresponding to each channel of image Â–
+Â“img1.datÂ”, Â“img2.datÂ”, Â“img3.datÂ”</span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>&nbsp;</span></p>
@@ -1528,7 +1530,7 @@ save a .jpg representation using <span class=SpellE>OpenCV</span>.<br>
 <br>
 The following Five images are used for analysis. Their distinctive properties
 are mentioned below. The images and their encoded .<span class=SpellE>dat</span>
-outputs are placed in <b style='mso-bidi-font-weight:normal'>‘Sample_images_and_results.zip’</b>.
+outputs are placed in <b style='mso-bidi-font-weight:normal'>Â‘Sample_images_and_results.zipÂ’</b>.
 For proper image comparison, see the .tiff and .jpg files in the folder.</span></p>
 
 <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt'><span
@@ -1867,7 +1869,7 @@ lang=EN-IN style='font-size:14.0pt;line-height:106%;mso-ansi-language:EN-IN'>&nb
 class=GramE><b><span lang=EN-IN style='font-size:14.0pt;line-height:106%;
 font-family:"Trajan Pro";mso-ansi-language:EN-IN'>1.tiff</span></b></span><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;font-family:"Trajan Pro";
-mso-ansi-language:EN-IN'> – Very low correlation and redundancy</span></p>
+mso-ansi-language:EN-IN'> Â– Very low correlation and redundancy</span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
 text-align:center'><span lang=EN-IN style='font-size:14.0pt;line-height:106%;
@@ -1903,7 +1905,7 @@ mso-ansi-language:EN-IN'>&nbsp;</span></p>
 class=GramE><b><span lang=EN-IN style='font-size:14.0pt;line-height:106%;
 font-family:"Trajan Pro";mso-ansi-language:EN-IN'>2.tiff</span></b></span><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;font-family:"Trajan Pro";
-mso-ansi-language:EN-IN'> – Very High Redundancy</span></p>
+mso-ansi-language:EN-IN'> Â– Very High Redundancy</span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
 text-align:center'><span style='font-size:14.0pt;line-height:106%;mso-no-proof:
@@ -1934,7 +1936,7 @@ mso-ansi-language:EN-IN'>&nbsp;</span></p>
 text-align:center'><span class=GramE><b><span lang=EN-IN style='font-size:14.0pt;
 line-height:106%;font-family:"Trajan Pro";mso-ansi-language:EN-IN'>3.tiff</span></b></span><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;font-family:"Trajan Pro";
-mso-ansi-language:EN-IN'> – Low correlation and Redundancy</span></p>
+mso-ansi-language:EN-IN'> Â– Low correlation and Redundancy</span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
 text-align:center'><span lang=EN-IN style='font-size:14.0pt;line-height:106%;
@@ -1981,7 +1983,7 @@ mso-ansi-language:EN-IN'>&nbsp;</span></p>
 text-align:center'><span class=GramE><b><span lang=EN-IN style='font-size:14.0pt;
 line-height:106%;font-family:"Trajan Pro";mso-ansi-language:EN-IN'>4.tiff</span></b></span><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;font-family:"Trajan Pro";
-mso-ansi-language:EN-IN'> – Moderate Correlation and Redundancy</span></p>
+mso-ansi-language:EN-IN'> Â– Moderate Correlation and Redundancy</span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
 text-align:center'><span lang=EN-IN style='font-size:14.0pt;line-height:106%;
@@ -2016,7 +2018,7 @@ mso-ansi-language:EN-IN'>&nbsp;</span></p>
 class=GramE><b><span lang=EN-IN style='font-size:14.0pt;line-height:106%;
 font-family:"Trajan Pro";mso-ansi-language:EN-IN'>5.tiff</span></b></span><span
 lang=EN-IN style='font-size:14.0pt;line-height:106%;font-family:"Trajan Pro";
-mso-ansi-language:EN-IN'> – Very High Redundancy and Correlation</span></p>
+mso-ansi-language:EN-IN'> Â– Very High Redundancy and Correlation</span></p>
 
 <p class=MsoNormal align=center style='margin-bottom:0in;margin-bottom:.0001pt;
 text-align:center'><span style='font-size:14.0pt;line-height:106%;mso-no-proof:
