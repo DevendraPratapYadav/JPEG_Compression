@@ -33,3 +33,4 @@ The program generated three files - 'img1.dat','img2.dat','img3.dat' correspondi
 
 Option 2 takes these three .dat files and decodes them to output 'decoded.jpg'.
 
+NOTE: all files must be placed in the same folder as executable 'jpeg'.
