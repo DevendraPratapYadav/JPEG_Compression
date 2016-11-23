@@ -12,6 +12,7 @@ Main code is present in 'code' folder in Github directory. 'jpeg.cpp' is the mai
 
 ###HOW TO RUN : 
 NOTE: Cmake and GNU make are required for compilation
+
 1) Compile the program by entering the following command :
 ```sh
    cd code
