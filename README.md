@@ -2,7 +2,7 @@
 JPEG encoding and decoding in C++
 
 
-##Please visit [HERE](https://devendrapratapyadav.github.io/JPEG_Compression) for detailed analysis of code and experiment results.
+## Please visit [HERE](https://devendrapratapyadav.github.io/JPEG_Compression) for detailed analysis of code and experiment results.
 
 Main code is present in 'code' folder in Github directory. 'jpeg.cpp' is the main program.
 'jpeg.cpp' is also placed in the main directory but compilation must be done from one in 'code' folder.
@@ -10,7 +10,7 @@ Main code is present in 'code' folder in Github directory. 'jpeg.cpp' is the mai
 'Sample_images_and_results.zip' contains some images and their decoded outputs. These outputs are analyzed in the above given link.
 
 
-###HOW TO RUN : 
+### HOW TO RUN : 
 NOTE: Cmake and GNU make are required for compilation
 
 1) Compile the program by entering the following command :
